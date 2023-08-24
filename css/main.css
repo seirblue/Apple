@@ -24,7 +24,8 @@ header .top .top-menu {
   top: 0;
   backdrop-filter: blur(30px);
   background: rgba(22, 22, 23, 0.8);
-  z-index: 10;
+  transition: 0.5s;
+  z-index: 50;
 }
 header .top .top-menu a.logo {
   width: 24%;
@@ -54,6 +55,9 @@ header .top ul li a {
   font-weight: 200;
   color: rgba(255, 255, 255, 0.8);
 }
+header .top ul li a:hover {
+  color: #fff;
+}
 header .top .top-banner {
   position: static;
   display: flex;
@@ -73,10 +77,10 @@ header .top .top-banner a {
   position: relative;
   width: 1280px;
   margin: 0 auto;
-  border: 1px solid #333;
+  /* border: 1px solid #333;
   border-left: transparent;
-  border-right: transparent;
-  background: #333;
+  border-right: transparent; */
+  /* background: #000; */
 }
 .menu ul {
   display: flex;
@@ -102,12 +106,14 @@ header .top .top-banner a {
   height: 0;
   left: 0;
   /* top: 50px; */
-  background: rgba(22, 22, 23, 0.8);
-  backdrop-filter: blur(30px);
+  background: #000;
+  backdrop-filter: saturate(180%) blur(30px);
   overflow: hidden;
   transition: height 0.5s;
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 2px;
+  box-shadow: 2px 5px 50px rgba(0, 0, 0, 0.6);
+  /* margin-top: 2px; */
+  /* padding: 60px 0; */
+  z-index: 10;
 }
 /* .sub-menu.on {
   height: 200px;
@@ -115,12 +121,60 @@ header .top .top-banner a {
 .sub-menu .lnb {
   width: 48%;
   margin: 0 auto;
+  padding: 50px 0;
   display: flex;
-  color: #f5f5f7;
+  color: #fff;
 }
 .sub-menu .lnb > ul > li a {
-  color: #f5f5f7;
+  color: #fff;
 }
+.sub-menu .lnb ul.first {
+  margin-right: 60px;
+}
+.sub-menu .lnb ul.others {
+  margin-right: 40px;
+}
+.sub-menu .lnb ul.first li:first-child,
+.sub-menu .lnb ul.others li:first-child {
+  font-size: 12px;
+  color: rgb(134, 134, 139);
+}
+.sub-menu .lnb ul li {
+  margin: 10px 0;
+}
+.sub-menu .lnb ul.first li a {
+  font-size: 24px;
+  font-weight: 500;
+  color: #e8e8ed;
+  transition: 0.1s;
+  transition-delay: 0.1s;
+}
+.sub-menu .lnb ul.first li a:hover{
+  color: #fff;
+}
+.sub-menu .lnb ul.first li.nope1 {
+  margin-top: 20px;
+}
+.sub-menu .lnb ul.first li.nope a {
+  font-size: 12px;
+}
+.sub-menu .lnb ul.others li a {
+  font-size: 12px;
+  font-weight: 500;
+  color: #e8e8ed;
+  transition: 0.1s;
+  transition-delay: 0.1s;
+}
+.sub-menu .lnb ul.others li a:hover {
+  color: #fff;
+}
+.on { 
+  filter: saturate(180%) blur(15px) brightness(60%);
+  /* transition: 0.5s; */
+}
+/* .sub-menu .lnb ul.others li a{
+  font-size: 24px;
+} */
 .visual .macbook-air {
   width: 100%;
   height: 624px;
@@ -338,12 +392,13 @@ header .top .top-banner a {
   overflow: hidden;
 }
 .contents .inner .inner-top {
-  width: 1250px;
+  width: 100%;
   height: 703px;
   margin: 0 auto;
 }
 .contents .inner .inner-top .inner-img {
   display: flex;
+  width: 1280px;
 }
 .contents .inner .inner-top .inner-img a {
   margin: 0 10px;
@@ -352,8 +407,9 @@ header .top .top-banner a {
   position: absolute;
   display: flex;
   align-items: center;
-  left: 20%;
-  bottom: 14%;
+  left: 80px;
+  bottom: 8%;
+  z-index: 999;
 }
 .contents .inner .inner-bottom div.inner-btn {
   padding: 11px 21px;
@@ -375,7 +431,17 @@ header .top .top-banner a {
 .contents .inner .inner-bottom p span.desc {
   font-weight: 500;
 }
-.contents .inner .inner-control-nav ul {
+#inner-control-nav {
+  position: static;
+  padding: 20px 0;
+}
+#inner-control-nav span {
+  margin: 0 6px;
+}
+.swiper-slide {
+  width: 100%;
+}
+/* .contents .inner .inner-control-nav ul {
   display: flex;
   justify-content: center;
 }
@@ -392,7 +458,7 @@ header .top .top-banner a {
 }
 .contents .inner .inner-control-nav ul li:hover {
   background: rgba(0, 0, 0, 0.54);
-}
+} */
 footer {
   background: #f5f5f7;
   padding-bottom: 20px;
@@ -501,4 +567,25 @@ footer .foot-bottom .adress ul li::after {
 }
 footer .foot-bottom .adress ul li:last-child:after {
   content: "";
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
