@@ -170,7 +170,7 @@ header .top .top-banner a {
 }
 .on { 
   filter: saturate(180%) blur(15px) brightness(60%);
-  /* transition: 0.5s; */
+  transition: 0.5s;
 }
 /* .sub-menu .lnb ul.others li a{
   font-size: 24px;
