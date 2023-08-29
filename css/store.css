@@ -760,13 +760,46 @@ h1.alone {
   width: 100%;
   background: #f5f5f7;
 }
+#service h1.alone8 span.sub-btn{
+  display: inline-flex;
+  width: 80px;
+  height: 38px;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 50px;
+  border-color: transparent;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 20px 6px;
+  transition: 0.3s;
+}
+#service h1.alone8 span.sub-btn:hover{
+  background: #007aff;
+}
+#service h1.alone8 span.sub-btn:hover a{
+  color: #fff;
+}
+#service h1.alone8 span.sub-btn:nth-of-type(2){
+  margin-left: 14px;
+}
+#service h1.alone8 span.short{
+  width: 60px;
+}
+#service h1.alone8 span.sub-btn a{
+  font-size: 12px;
+  font-weight: 400;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+}
 #service .service1 {
   width: 55%;
   margin: 0 auto;
   display: flex;
   padding-bottom: 20px;
 }
-#service .service1 .img-box {
+#service .service1 .img-wrap{
+  display: flex;
+}
+#service .service1 .img-wrap .img-box {
   position: relative;
   width: 480px;
   height: 500px;
@@ -777,33 +810,96 @@ h1.alone {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
-#service .service1 .img-box .text-box {
+#service .service1 .img-wrap .img-box .text-box {
   position: absolute;
   left: 30px;
   top: 30px;
   color: #fff;
 }
-#service .service1 .img-box:hover {
+#service .service1 .img-wrap .img-box:hover {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
   transform: scale(101%);
 }
-#service .service1 .img-box .text-box h1 {
+#service .service1 .img-wrap .img-box .text-box h1 {
   margin: 10px 0;
 }
-#service .service1 .img-box .text-box p:first-child {
+#service .service1 .img-wrap .img-box .text-box p:first-child {
   font-size: 12px;
   text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
 }
-#service .service1 .img-box .text-white {
+#service .service1 .img-wrap .img-box .text-white {
   color: #1d1d1f;
 }
-#service .service1 .img-box .text-white p:first-child {
+#service .service1 .img-wrap .img-box .text-white p:first-child {
   font-size: 12px;
   color: #6e6e73;
   text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
 }
-#service .service1 .apple-tv{
+#service .service1 .img-wrap .apple-tv{
   background: url(../images/store-card-50-tv-services.jpg) center/cover no-repeat;
+}
+#service .service1 .img-wrap .apple-one{
+  background: url(../images/store-card-50-subscriptions.jpg) center/cover no-repeat;
+}
+#service .service1 .img-wrap .apple-care{
+  background: url(../images/store-card-40-applecare.jpg) center/cover no-repeat;
+}
+#service .service1 .img-wrap .apple-home{
+  background: url(../images/store-card-50-homekit.jpg) center/cover no-repeat;
+}
+#service .service2 {
+  width: 55%;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 20px;
+}
+#service .service2 .img-wrap{
+  display: flex;
+}
+#service .service2 .img-wrap .img-box {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+#service .service2 .img-wrap .img-box .text-box {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  color: #fff;
+}
+#service .service2 .img-wrap .img-box:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  transform: scale(101%);
+}
+#service .service2 .img-wrap .img-box .text-box h1 {
+  margin: 10px 0;
+}
+#service .service2 .img-wrap .img-box .text-box p:first-child {
+  font-size: 12px;
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
+}
+#service .service2 .img-wrap .img-box .text-white {
+  color: #1d1d1f;
+}
+#service .service2 .img-wrap .img-box .text-white p:first-child {
+  font-size: 12px;
+  color: #6e6e73;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+#service .service2 .img-wrap .edu{
+  background: url(../images/ipad-card.jpg) center/cover no-repeat;
+}
+#service .service2 .img-wrap .buisness{
+  background: url(../images/store-card-40-business.jpg) center/cover no-repeat;
+}
+#service .service2 .img-wrap .repubish{
+  background: url(../images/store-card-40-refurb.jpg) center/cover no-repeat;
 }
 footer {
   background: #f5f5f7;
@@ -825,6 +921,9 @@ footer .foot-top p {
   font-size: 12px;
   font-weight: 400;
   color: #6e6e73;
+}
+footer .foot-top p span.bold{
+  font-weight: bold;
 }
 footer .foot-top p:first-child {
   padding-top: 20px;
