@@ -1040,3 +1040,8 @@ footer .foot-bottom .adress ul li:last-child:after {
   height: 100%;
   object-fit: cover;
 }
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+}
