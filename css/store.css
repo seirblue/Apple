@@ -218,6 +218,7 @@ header .top .top-banner a {
 #top {
   width: 100%;
   background: #f5f5f7;
+  overflow: hidden;
 }
 #top .top1 {
   width: 55%;
@@ -326,7 +327,7 @@ h1.alone {
 }
 #top .top3 .img-wrap {
   display: flex;
-  margin-left: 22.5%;
+  /* margin-left: -16%; */
   padding-bottom: 20px;
 }
 #top .top3 .img-wrap .img-box {
@@ -400,11 +401,13 @@ h1.alone {
 #middle {
   width: 100%;
   background: #f5f5f7;
+  overflow: hidden;
 }
 #middle .mid1 {
   width: 55%;
   margin: 0 auto;
   display: flex;
+  /* margin-left: 23%; */
   padding-bottom: 20px;
 }
 #middle .mid1 .img-box {
@@ -464,7 +467,7 @@ h1.alone {
 }
 #middle .mid2 .card-wrap {
   display: flex;
-  margin-left: 22.5%;
+  /* margin-left: -18.5%; */
 }
 #middle .mid2 .card-wrap .img-box {
   position: relative;
@@ -529,7 +532,7 @@ h1.alone {
 #product {
   width: 100%;
   background: #f5f5f7;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 #product .product1{
   display: flex;
@@ -537,7 +540,7 @@ h1.alone {
 }
 #product .product1 .img-wrap {
   display: flex;
-  margin-left: 22.5%;
+  /* margin-left: -16.5%; */
   padding-bottom: 20px;
 }
 #product .product1 .img-wrap .img-box,
@@ -696,7 +699,7 @@ h1.alone {
 }
 #product .product2 .img-wrap {
   display: flex;
-  margin-left: 22.5%;
+  /* margin-left: -16.5%; */
   padding-bottom: 20px;
 }
 #product .product2 .img-wrap .img-box .text-box ul{
@@ -759,6 +762,7 @@ h1.alone {
 #service {
   width: 100%;
   background: #f5f5f7;
+  overflow: hidden;
 }
 #service h1.alone8 span.sub-btn{
   display: inline-flex;
@@ -791,9 +795,10 @@ h1.alone {
   text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
 }
 #service .service1 {
-  width: 55%;
-  margin: 0 auto;
+  /* width: 55%;
+  margin: 0 auto; */
   display: flex;
+  /* margin-left: 8%; */
   padding-bottom: 20px;
 }
 #service .service1 .img-wrap{
@@ -1017,10 +1022,11 @@ footer .foot-bottom .adress ul li:last-child:after {
 .swiper {
   width: 100%;
   height: 100%;
+  overflow: visible !important;
 }
 
 .swiper-slide {
-  text-align: center;
+  /* text-align: center; */
   font-size: 18px;
   background: #fff;
   display: flex;
