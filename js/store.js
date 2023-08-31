@@ -64,6 +64,12 @@ subMenu.forEach(function (item, keys) {
   });
 });
 
+$(function(){
+  $(".tb-one").click(function(){
+    console.log("click")
+  })
+})
+
 $(function () {
   var swiper = new Swiper(".mySwiper1", {
     direction: "horizontal",
@@ -83,8 +89,8 @@ $(function () {
           clickable: true,
         }, */
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next1",
+      prevEl: ".swiper-button-prev1",
     },
   });
 
@@ -106,8 +112,8 @@ $(function () {
           clickable: true,
         }, */
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next2",
+      prevEl: ".swiper-button-prev2",
     },
   });
 
@@ -129,8 +135,8 @@ $(function () {
           clickable: true,
         }, */
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next3",
+      prevEl: ".swiper-button-prev3",
     },
   });
 
@@ -152,8 +158,8 @@ $(function () {
           clickable: true,
         }, */
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next4",
+      prevEl: ".swiper-button-prev4",
     },
   });
 
@@ -175,8 +181,8 @@ $(function () {
           clickable: true,
         }, */
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next5",
+      prevEl: ".swiper-button-prev5",
     },
   });
 });
