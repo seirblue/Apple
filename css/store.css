@@ -18,7 +18,7 @@ body {
 }
 header .top .top-menu {
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
   display: flex;
   align-items: center;
   top: 0;
@@ -112,11 +112,18 @@ header .top ul li a:hover {
   box-sizing: border-box;
   animation: top-banner 1s;
 }
+.top-banner:hover .tb-one::before,
+.top-banner:hover .tb-one::after{
+  opacity: 0.7;
+}
 .top-banner a {
   color: #06c;
   font-size: 14px;
 }
 .top-banner .tb-two{
+  display: none;
+}
+.hide{
   display: none;
 }
 .top-banner .tb-one::before,
@@ -131,6 +138,7 @@ header .top ul li a:hover {
   opacity: 0;
   cursor: pointer;
   animation: btn-arr-tb 1s 1s;
+  transition: 0.5s;
 }
 .top-banner .tb-one:after,
 .top-banner .tb-two:after{
@@ -144,6 +152,7 @@ header .top ul li a:hover {
   opacity: 0;
   cursor: pointer;
   animation: btn-arr-tb 1s 1s;
+  transition: 0.5s;
 }
 @keyframes top-banner{
   0% {
@@ -162,9 +171,12 @@ header .top ul li a:hover {
   100%{
     opacity: 0.7;
   }
+  0% {
+    opacity: 0;
+  }
 }
 .menu {
-  position: relative;
+  position: fixed;
   width: 1280px;
   margin: 0 auto;
   /* border: 1px solid #333;
@@ -199,11 +211,14 @@ header .top ul li a:hover {
   background: #fff;
   backdrop-filter: saturate(180%) blur(30px);
   overflow: hidden;
-  transition: height 0.5s;
+  transition: height 1s;
   box-shadow: 2px 5px 50px rgba(255, 255, 255, 0.6);
   /* margin-top: 2px; */
   /* padding: 60px 0; */
   z-index: 10;
+}
+.menu:hover ~ .sub-menu{
+  transition-delay: 0.2s;
 }
 /* .sub-menu.on {
   height: 200px;
@@ -1104,7 +1119,7 @@ footer .foot-bottom .adress ul li:last-child:after {
   background-size: 65%;
   border-radius: 50px;
   border: none;
-  transition: 0.5s;
+  transition: 0.8s;
   transform: scale(0);
   opacity: 0;
 }
@@ -1122,9 +1137,14 @@ footer .foot-bottom .adress ul li:last-child:after {
   background-position-y: 51%;
 }
 
+.mySwiper .swiper-button-prev:hover,
+.mySwiper .swiper-button-next:hover{
+  opacity: 1 !important;
+}
+
 .mySwiper:hover .swiper-button-prev,
 .mySwiper:hover .swiper-button-next{
-  opacity: 1;
+  opacity: 0.7;
   transform: scale(1);
 }
 
@@ -1136,6 +1156,6 @@ footer .foot-bottom .adress ul li:last-child:after {
 .swiper-button-prev.swiper-button-disabled, 
 .swiper-button-next.swiper-button-disabled{
   opacity: 0 !important;
-  transition: 0.5s;
+  transition: 0.8s;
   transform: scale(1);
 }

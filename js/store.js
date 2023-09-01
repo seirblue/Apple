@@ -40,7 +40,7 @@ hd.forEach(function (item) {
   });
   item.addEventListener("mouseleave", function () {
     document.querySelector(".top-menu").style.backgroundColor = "#F5F5F7";
-    document.querySelector(".top-menu").style.transitionDelay = "0.1s";
+    document.querySelector(".top-menu").style.transitionDelay = "0.3s";
 
     /* for (let i = 0; i <= 2; i++) {
     fl[i].classList.remove("on");
@@ -52,7 +52,7 @@ subMenu.forEach(function (item, keys) {
   // let x = gnb[keys].querySelector("a");
   item.addEventListener("mouseenter", function () {
     //   subMenu.style.height = ht + "px";
-    gnb[keys].classList.add("active");
+    // gnb[keys].classList.add("active");
   });
   item.addEventListener("mouseleave", function (e) {
     let j = Array.from(subMenu).indexOf(e.target);
@@ -60,15 +60,9 @@ subMenu.forEach(function (item, keys) {
     /* for (let i = 0; i <= 4; i++) {
             subMenu[i].style.height = 0 + "px";
           } */
-    gnb[keys].classList.remove("active");
+    // gnb[keys].classList.remove("active");
   });
 });
-
-$(function(){
-  $(".tb-one").click(function(){
-    console.log("click")
-  })
-})
 
 $(function () {
   var swiper = new Swiper(".mySwiper1", {
