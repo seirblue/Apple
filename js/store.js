@@ -65,6 +65,10 @@ subMenu.forEach(function (item, keys) {
 });
 
 $(function () {
+  $(".tb-one::after,.tb-one::before").click(function () {
+    $(".tb-one").css({ display: "none" });
+  });
+
   var swiper = new Swiper(".mySwiper1", {
     direction: "horizontal",
     // loop: true,
