@@ -123,6 +123,7 @@ header .top ul li a:hover {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  cursor: pointer;
 }
 .top-banner ul li img {
   height: 54px;
