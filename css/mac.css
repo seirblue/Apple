@@ -446,11 +446,20 @@ span.show {
   opacity: 0.5;
 }
 .visual .visual-inner-middle .mid-parent .mid > ul:nth-child(2){
-  height: 1200px;
+  /* height: 1200px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 40px;
+  align-items: center;
+  /* margin-top: 40px; */
+}
+.visual .visual-inner-middle .mid-parent .mid > ul:nth-child(2) li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 108px;
+  padding: 10px 0;
 }
 .visual .visual-inner-middle .mid-parent .mid > ul:nth-child(2) h4{
   font-size: 21px;
@@ -462,13 +471,172 @@ span.show {
   font-weight: 400;
   color: #1d1d1f;
 }
-.visual .visual-inner-middle .mid-parent .mid > ul:nth-child(2) span.max{
-  font-size: 13px;
-  color: #1d1d1f;
-  opacity: 0;
+.visual .visual-inner-middle .mid-parent .mid-two ul:nth-child(2) h4.max,
+.visual .visual-inner-middle .mid-parent .mid-four ul:nth-child(2) h4.max{
+  position: relative;
 }
-.visual .visual-inner-middle .mid-parent .mid > ul:nth-child(2) span.show{
-  opacity: 1;
+.visual .visual-inner-middle .mid-parent .mid-two ul:nth-child(2) h4.max::before,
+.visual .visual-inner-middle .mid-parent .mid-four ul:nth-child(2) h4.max::before{
+  position: absolute;
+  display: block;
+  content: "최대";
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+  top: -20px;
+  left: 20px;
+}
+.visual .visual-inner-bottom{
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+.visual .visual-inner-bottom .bottom-btn{
+  display: flex;
+}
+.visual .visual-inner-bottom .bottom-btn p{
+  margin: 20px;
+}
+.visual .visual-inner-bottom .bottom-btn p a{
+  font-size: 20px;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
+  color: #06c;
+}
+#part1 div.top{
+  width: 1400px;
+  margin: 12px auto;
+  display: flex;
+  overflow: hidden;
+}
+#part1 div.top div{
+  margin: 14px;
+}
+#part1 div.top .left{
+  width: 675px;
+  height: 675px;
+  background: url(../images/accessories_tile_large.jpg) center no-repeat #f2f2f2;
+  background-position-y: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#part1 div.top .left .title-sub{
+  margin-top: 60px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+#part1 div.top .left .title-main{
+  text-align: center;
+  font-size: 46px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  color: #1d1d1f;
+  margin-bottom: 20px;
+}
+#part1 div.top .left .button{
+  background: #0071e3;
+  border-radius: 980px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#part1 div.top .left .button a{
+  letter-spacing: -1px;
+  font-size: 15px;
+  color: #fff;
+}
+#part1 div.top .left .button:hover{
+  background: #0077ed;
+}
+#part1 div.top .right{
+  width: 675px;
+  height: 675px;
+  background: url(../images/trade_in_mac_tile_large.jpg) center no-repeat #f2f2f2;
+  background-position-y: bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#part1 div.top .right .title-sub{
+  margin-top: 60px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #1d1d1f;
+}
+#part1 div.top .right .title-main{
+  text-align: center;
+  font-size: 46px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  color: #1d1d1f;
+  margin-bottom: 20px;
+}
+#part1 div.top .right .desc{
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+}
+#part1 div.top .right .more{
+  margin-top: 16px;
+}
+#part1 div.top .right .more a{
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  color: #06c;
+}
+#part1 div.bottom{
+  width: 1400px;
+  height: 240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-bottom: 60px;
+}
+#part1 div.bottom > div{
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#part1 div.bottom > div p.finance img{
+  width: 75px;
+  height: 75px;
+  transform: translateY(14px);
+}
+#part1 div.bottom > div p.help img{
+  width: 75px;
+  height: 60px;
+  transform: translateY(6px);
+}
+#part1 div.bottom > div .desc{
+  font-size: 20px;
+  color: #1d1d1f;
+  line-height: 32px;
+}
+#part1 div.bottom > div .desc span{
+  font-weight: 600;
+}
+#part1 div.bottom > div .more{
+  margin: 10px 0;
+}
+#part1 div.bottom > div .more a{
+  font-size: 18px;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  color: #06c;
+}
+#part1 div.bottom .middle{
+  transform: translateY(-17px);
+}
+#part1 div.bottom .right{
+  transform: translateY(10px);
+}
+sup{
+  font-size: 5px;
 }
 footer {
   background: #f5f5f7;
