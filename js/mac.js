@@ -40,7 +40,7 @@ hd.forEach(function (item) {
   });
   item.addEventListener("mouseleave", function () {
     document.querySelector(".top-menu").style.backgroundColor = "#fff";
-    document.querySelector(".top-menu").style.transitionDelay = "0.3s";
+    document.querySelector(".top-menu").style.transitionDelay = "0.1s";
 
     /* for (let i = 0; i <= 2; i++) {
     fl[i].classList.remove("on");
@@ -64,7 +64,7 @@ subMenu.forEach(function (item, keys) {
   });
 });
 
-$(function(){
+$(function () {
   var swiper = new Swiper(".mySwiper6", {
     speed: 14000,
     loop: true,
@@ -75,6 +75,7 @@ $(function(){
       delay: 0,
       disableOnInteraction: false,
     },
+    allowTouchMove: false
   });
   var swiper = new Swiper(".mySwiper7", {
     speed: 11500,
@@ -86,5 +87,35 @@ $(function(){
       delay: 0,
       disableOnInteraction: false,
     },
+    allowTouchMove: false
   });
-})
+
+  /* $(".left-bottom").hover(
+    function () {
+      var swiper = new Swiper(".mySwiper6", {
+        speed: 40000,
+        loop: true,
+        spaceBetween: 50,
+        slidesPerView: 3,
+        // centeredSlides: true,
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false,
+        },
+      });
+    },
+    function () {
+      var swiper = new Swiper(".mySwiper6", {
+        speed: 14000,
+        loop: true,
+        spaceBetween: 50,
+        slidesPerView: 3,
+        // centeredSlides: true,
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false,
+        },
+      });
+    }
+  ); */
+});

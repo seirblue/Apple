@@ -129,6 +129,9 @@ header .top ul li a:hover {
 .top-banner ul li img {
   height: 54px;
 }
+.top-banner ul li:hover a{
+  color: #06c;
+}
 .top-banner ul li a {
   font-size: 13px;
   text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
@@ -1131,6 +1134,10 @@ span.show {
   margin: 0 6px;
   cursor: pointer;
 }
+.mySwiper6 .swiper-wrapper .swiper-slide a img:hover{
+  filter: brightness(80%);
+  transition: 0.3s;
+}
 .mySwiper7{
   position: absolute !important;
   width: 100%;
@@ -1154,6 +1161,10 @@ span.show {
   height: 135px;
   border-radius: 10px;
   margin: 0 6px;
+}
+.mySwiper7 .swiper-wrapper .swiper-slide a img:hover{
+  filter: brightness(80%);
+  transition: 0.3s;
 }
 #part4 .inner-middle .inner-middle-wrap .left .left-bottom ul.img-ban-top{
   display: flex;
@@ -1200,7 +1211,7 @@ span.show {
 
 #part4 .inner-bottom{
   width: 1370px;
-  margin: 80px auto 20px;
+  margin: 20px auto 20px;
   background: #fbfbfd;
   display: flex;
   justify-content: space-evenly;
@@ -1223,6 +1234,9 @@ span.show {
 }
 #part4 .inner-bottom .right .desc p{
   margin: 10px 0;
+  font-size: 20px;
+  font-weight: normal;
+  text-shadow: none;
 }
 #part4 .inner-bottom .right .desc a{
   font-size: 20px;
@@ -1234,6 +1248,48 @@ span.show {
 #part4 .inner-bottom .right .desc a:hover{
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+#part5 h1{
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "SF Pro Display";
+  margin-bottom: 20px;
+}
+#part5 p{
+  font-size: 20px;
+  margin: 10px;
+}
+#part5 .top,
+#part5 .bottom{
+  width: 1370px;
+  height: 600px;
+  margin: 20px auto;
+  background: url(../images/business_large.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f5f5f7;
+}
+#part5 .top .desc{
+  display: flex;
+  flex-direction: column;
+}
+#part5 .top .desc a,
+#part5 .bottom .desc a{
+  font-size: 20px;
+  color: #f5f5f7;
+  text-align: center;
+  margin: 4px;
+}
+#part5 .top .desc a:hover,
+#part5 .bottom .desc a:hover{
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+#part5 .bottom{
+  background: url(../images/education_large.jpg);
 }
 
 sup {
@@ -1255,17 +1311,24 @@ footer .foot-top::after {
   background: #d2d2d7;
   margin: 20px 0 6px;
 }
-footer .foot-top p {
+footer .foot-top ol{
+  font-size: 12px;
+}
+footer .foot-top ol li p {
   font-size: 12px;
   font-weight: 400;
   color: #6e6e73;
+  margin: 10px 0;
 }
-footer .foot-top p span.bold {
-  font-weight: bold;
+footer .foot-top ol li p a{
+  color: #424245;
+  text-decoration: underline;
 }
-footer .foot-top p:first-child {
+footer .foot-top ol li:first-child p {
   padding-top: 20px;
-  margin-bottom: 10px;
+}
+footer .foot-top ol li p span.bold {
+  font-weight: bold;
 }
 footer .foot-middle {
   width: 50%;
