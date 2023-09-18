@@ -65,7 +65,7 @@ subMenu.forEach(function (item, keys) {
 });
 
 $(function () {
-  var swiper = new Swiper(".mySwiper6", {
+  /* var swiper = new Swiper(".mySwiper6", {
     speed: 14000,
     loop: true,
     spaceBetween: 50,
@@ -75,7 +75,8 @@ $(function () {
       delay: 0,
       disableOnInteraction: false,
     },
-    allowTouchMove: false
+    allowTouchMove: false,
+    oneWayMovement: true,
   });
   var swiper = new Swiper(".mySwiper7", {
     speed: 11500,
@@ -87,35 +88,52 @@ $(function () {
       delay: 0,
       disableOnInteraction: false,
     },
-    allowTouchMove: false
-  });
+    allowTouchMove: false,
+    oneWayMovement: true,
+  }); */
 
-  /* $(".left-bottom").hover(
+  let animationSpeed1 = 60; // 기본 슬라이더 속도 (초당 이동 거리)
+  let animationSpeed2 = 80; // 기본 슬라이더 속도 (초당 이동 거리)
+  let sliderWidth = $(".slider").width() * $(".slider").length; //이미지 가로 값
+  $(".slider-container1").append($("#slider1").eq(0).clone());
+  $(".slider-container2").append($("#slider2").eq(0).clone());
+
+  const tl1 = gsap.timeline({ repeat: -1 });
+  tl1.to(".slider-container1", {
+    x: -sliderWidth,
+    duration: animationSpeed2,
+    ease: "linear",
+  });
+  tl1.play();
+  $(".slider-container1").hover(
     function () {
-      var swiper = new Swiper(".mySwiper6", {
-        speed: 40000,
-        loop: true,
-        spaceBetween: 50,
-        slidesPerView: 3,
-        // centeredSlides: true,
-        autoplay: {
-          delay: 0,
-          disableOnInteraction: false,
-        },
-      });
+      //tl.pause();
+      animationSpeed2 = 200; // 원하는 속도로 조절합니다.
+      tl1.duration(animationSpeed2);
     },
     function () {
-      var swiper = new Swiper(".mySwiper6", {
-        speed: 14000,
-        loop: true,
-        spaceBetween: 50,
-        slidesPerView: 3,
-        // centeredSlides: true,
-        autoplay: {
-          delay: 0,
-          disableOnInteraction: false,
-        },
-      });
+      animationSpeed2 = 80; // 마우스를 떠난 후 기존 속도로 복구합니다.
+      tl1.duration(animationSpeed2);
+      tl1.play();
     }
-  ); */
+  );
+  const tl2 = gsap.timeline({ repeat: -1 });
+  tl2.to(".slider-container2", {
+    x: -sliderWidth,
+    duration: animationSpeed1,
+    ease: "linear",
+  });
+  tl2.play();
+  $(".slider-container2").hover(
+    function () {
+      //tl.pause();
+      animationSpeed1 = 200; // 원하는 속도로 조절합니다.
+      tl2.duration(animationSpeed1);
+    },
+    function () {
+      animationSpeed1 = 60; // 마우스를 떠난 후 기존 속도로 복구합니다.
+      tl2.duration(animationSpeed1);
+      tl2.play();
+    }
+  );
 });
