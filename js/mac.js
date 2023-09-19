@@ -65,32 +65,148 @@ subMenu.forEach(function (item, keys) {
 });
 
 $(function () {
-  /* var swiper = new Swiper(".mySwiper6", {
-    speed: 14000,
-    loop: true,
-    spaceBetween: 50,
-    slidesPerView: 3,
-    // centeredSlides: true,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-    },
-    allowTouchMove: false,
-    oneWayMovement: true,
+  $("section#part3 div.one div.middle ul li:first-child").click(function () {
+    $("#part3 div.one .bottom .back-img .back-img-inner2").css({
+      background: "url(../images/bia_safari_large.jpg)",
+      transition: "0.5s",
+    });
   });
-  var swiper = new Swiper(".mySwiper7", {
-    speed: 11500,
-    loop: true,
-    spaceBetween: 50,
-    slidesPerView: 3,
-    // centeredSlides: true,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-    },
-    allowTouchMove: false,
-    oneWayMovement: true,
-  }); */
+  $("section#part3 div.one div.middle ul li:nth-child(2)").click(function () {
+    $("#part3 div.one .bottom .back-img .back-img-inner2").css({
+      background: "url(../images/bia_photos_large.jpg)",
+      transition: "0.5s",
+    });
+  });
+  $("section#part3 div.one div.middle ul li:nth-child(3)").click(function () {
+    $("#part3 div.one .bottom .back-img .back-img-inner2").css({
+      background: "url(../images/bia_imovie_large.jpg)",
+      transition: "0.5s",
+    });
+  });
+  $("section#part3 div.one div.middle ul li:nth-child(4)").click(function () {
+    $("#part3 div.one .bottom .back-img .back-img-inner2").css({
+      background: "url(../images/bia_garageband_large.jpg)",
+      transition: "0.5s",
+    });
+  });
+  $("section#part3 div.one div.middle ul li:nth-child(5)").click(function () {
+    $("#part3 div.one .bottom .back-img .back-img-inner2").css({
+      background: "url(../images/bia_pages_large.jpg)",
+      transition: "0.5s",
+    });
+  });
+  $("section#part3 div.one div.middle ul li:nth-child(6)").click(function () {
+    $("#part3 div.one .bottom .back-img .back-img-inner2").css({
+      background: "url(../images/bia_numbers_large.jpg)",
+      transition: "0.5s",
+    });
+  });
+  $("section#part3 div.one div.middle ul li:nth-child(7)").click(function () {
+    $("#part3 div.one .bottom .back-img .back-img-inner2").css({
+      background: "url(../images/bia_keynote_large.jpg)",
+      transition: "0.5s",
+    });
+  });
+
+  $("div.back-img-inner2 img").eq(0).css({
+    opacity: "1",
+  });
+  $("div.back-img-inner2 img").eq(0).siblings().css({
+    opacity: "0",
+  });
+  $("section#part3 div.two div.bottom div.desc").css({
+    display:"none"
+  })
+  $("section#part3 div.two div.bottom div.desc1").css({
+    display:"block"
+  })
+
+  $("section#part3 div.two div.middle ul li:first-child").click(function () {
+    $("div.back-img-inner2 img").eq(0).siblings().css({
+      opacity: "0",
+      transition: "0.5s",
+    });
+    $("section#part3 div.two div.bottom div.desc").css({
+      display:"none"
+    })
+    $("div.back-img-inner2 img").eq(0).css({
+      opacity: "1",
+      transition: "0.5s",
+    });
+    $("section#part3 div.two div.bottom div.desc1").css({
+      display:"block"
+    })
+  });
+
+  $("section#part3 div.two div.middle ul li:nth-child(2)").click(function () {
+    $("div.back-img-inner2 img").eq(1).siblings().css({
+      opacity: "0",
+      transition: "0.5s",
+    });
+    $("section#part3 div.two div.bottom div.desc").css({
+      display:"none"
+    })
+    $("div.back-img-inner2 img").eq(1).css({
+      opacity: "1",
+      transition: "0.5s",
+      clipPath: "inset(0% 9% 0% 9%)",
+      transform: "translateY(4px)",
+    });
+    $("section#part3 div.two div.bottom div.desc2").css({
+      display:"block"
+    })
+  });
+
+  $("section#part3 div.two div.middle ul li:nth-child(3)").click(function () {
+    $("div.back-img-inner2 img").eq(2).siblings().css({
+      opacity: "0",
+      transition: "0.5s",
+    });
+    $("section#part3 div.two div.bottom div.desc").css({
+      display:"none"
+    })
+    $("div.back-img-inner2 img").eq(2).css({
+      opacity: "1",
+      transition: "0.5s",
+    });
+    $("section#part3 div.two div.bottom div.desc3").css({
+      display:"block"
+    })
+  });
+
+  $("section#part3 div.two div.middle ul li:nth-child(4)").click(function () {
+    $("div.back-img-inner2 img").eq(3).siblings().css({
+      opacity: "0",
+      transition: "0.5s",
+    });
+    $("section#part3 div.two div.bottom div.desc").css({
+      display:"none"
+    })
+    $("div.back-img-inner2 img").eq(3).css({
+      opacity: "1",
+      transition: "0.5s",
+    });
+    $("section#part3 div.two div.bottom div.desc4").css({
+      display:"block"
+    })
+  });
+
+  $("section#part3 div.two div.middle ul li:nth-child(5)").click(function () {
+    $("div.back-img-inner2 img").eq(4).siblings().css({
+      opacity: "0",
+      transition: "0.5s",
+    });
+    $("section#part3 div.two div.bottom div.desc").css({
+      display:"none"
+    })
+    $("div.back-img-inner2 img").eq(4).css({
+      opacity: "1",
+      transition: "0.5s",
+    });
+    $("section#part3 div.two div.bottom div.desc5").css({
+      display:"block"
+    })
+  });
 
   let animationSpeed1 = 60; // 기본 슬라이더 속도 (초당 이동 거리)
   let animationSpeed2 = 80; // 기본 슬라이더 속도 (초당 이동 거리)

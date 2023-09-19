@@ -819,6 +819,13 @@ span.show {
   text-align: center;
   cursor: pointer;
 }
+#part3 div.one .middle ul li::after{
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #333;
+}
 #part3 div.one .middle ul li img {
   transition: 0.3s;
 }
@@ -952,6 +959,7 @@ span.show {
   background-size: 598px 366px;
   display: flex;
   justify-content: center;
+  transition: 1s;
 }
 #part3 div.two .bottom hr {
   width: 60%;
@@ -964,6 +972,11 @@ span.show {
   height: 366px;
   /* background: url(../images/gallery_logicpro_large.jpg) center/cover no-repeat; */
   clip-path: inset(4% 9% 10% 9%);
+  transition: 0.5s;
+}
+#part3 div.two .bottom .back-img .back-img-inner2 img{
+  position: absolute;
+  z-index: 10;
 }
 #part3 div.two .bottom .bottom-foot {
   width: 60%;
@@ -977,14 +990,18 @@ span.show {
   display: inline-block;
   margin-left: 24px;
 }
-#part3 div.two .bottom .bottom-foot .desc {
+#part3 div.two .bottom .bottom-foot .desc6 {
   width: fit-content;
   display: inline-block;
   text-align: left;
   vertical-align: middle;
   font-size: 17px;
+  margin: 0 auto;
 }
-#part3 div.two .bottom .bottom-foot .desc a:hover {
+#part3 div.two .bottom .bottom-foot .desc6 a{
+  color: #06c;
+}
+#part3 div.two .bottom .bottom-foot .desc6 a:hover {
   text-decoration: underline;
 }
 
@@ -1120,15 +1137,16 @@ span.show {
 }
 .slider-container1 {
   width: 200%;
+  display: flex;
 }
 .slider-container2 {
   width: 200%;
+  display: flex;
 }
 .slider {
   width: 100%;
   white-space: nowrap;
 }
-
 .slide {
   flex: 1;
   min-width: 200px;
