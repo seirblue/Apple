@@ -338,6 +338,7 @@ span.show {
   background: #fafafa;
 }
 .visual .visual-inner-middle .top-btn {
+  position: relative;
   width: fit-content;
   margin: 0 auto;
   padding-top: 60px;
@@ -345,13 +346,50 @@ span.show {
 }
 .visual .visual-inner-middle .top-btn h1 {
   font-size: 42px;
+  cursor: default;
+}
+.visual .visual-inner-middle .top-btn h1 span {
+  transition: 0.6s;
+}
+.visual .visual-inner-middle .top-btn h1 span:hover {
+  color: #06c;
 }
 .visual .visual-inner-middle .top-btn ul {
   display: flex;
   justify-content: center;
 }
 .visual .visual-inner-middle .top-btn ul li {
+  position: relative;
   margin: 50px 20px;
+}
+.visual .visual-inner-middle .top-btn ul li:after {
+  position: absolute;
+  top: 37px;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #000;
+  opacity: 0;
+}
+.visual .visual-inner-middle .top-btn ul li.active2::after {
+  transition: 0.5s;
+  opacity: 1;
+}
+.visual .visual-inner-middle .top-btn ul li .se1 {
+  color: #1d1d1f;
+}
+.visual .visual-inner-middle .top-btn ul li .se2 {
+  color: #6e6e73;
+}
+.visual .visual-inner-middle .top-btn hr {
+  position: absolute;
+  width: 36%;
+  margin: 0 auto;
+  left: 50%;
+  top: 85%;
+  transform: translate(-50%);
+  opacity: 0.6;
 }
 .visual .visual-inner-middle .mid-parent {
   width: 55%;
@@ -372,6 +410,20 @@ span.show {
     "mid-mid1"
     "mid-mid2"
     "mid-mid2"
+    "mid-mid2"
+    "mid-mid3"
+    "mid-mid3"
+    "mid-mid4"
+    "mid-bottom";
+}
+.visual .visual-inner-middle .mid-parent2 .mid > ul:first-child {
+  /* height: 440px; */
+  display: grid;
+  grid-auto-rows: minmax(32px, auto);
+  grid-template-areas:
+    "mid-top1"
+    "mid-top2"
+    "mid-mid1"
     "mid-mid2"
     "mid-mid3"
     "mid-mid3"
@@ -501,6 +553,59 @@ span.show {
   top: -20px;
   left: 20px;
 }
+.visual .visual-inner-middle .mid-parent2 .mid-one ul:nth-child(2) h4.max,
+.visual .visual-inner-middle .mid-parent2 .mid-two ul:nth-child(2) h4.max,
+.visual .visual-inner-middle .mid-parent2 .mid-three ul:nth-child(2) h4.max,
+.visual .visual-inner-middle .mid-parent2 .mid-four ul:nth-child(2) h4.max {
+  position: relative;
+}
+.visual
+  .visual-inner-middle
+  .mid-parent2
+  .mid-two
+  ul:nth-child(2)
+  h4.max::before,
+.visual
+  .visual-inner-middle
+  .mid-parent2
+  .mid-three
+  ul:nth-child(2)
+  h4.max::before,
+.visual
+  .visual-inner-middle
+  .mid-parent2
+  .mid-four
+  ul:nth-child(2)
+  h4.max::before {
+  position: absolute;
+  display: block;
+  content: "최대";
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+  top: -20px;
+  left: 20px;
+}
+.visual .visual-inner-middle .mid-parent2 .mid-one ul:nth-child(2) h4.max::before{
+  position: absolute;
+  display: block;
+  content: "최대";
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+  top: -20px;
+  left: 14px;
+}
+.visual .visual-inner-middle .mid-parent2 .mid p.empty{
+  color: #000 !important;
+  font-size: 16px !important;
+  font-weight: normal !important;
+}
+.visual .visual-inner-middle .mid-parent2 .mid span.gray{
+  color: #86868b;
+}
 .visual .visual-inner-bottom {
   width: fit-content;
   margin: 0 auto;
@@ -517,12 +622,16 @@ span.show {
   text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
   color: #06c;
 }
+.visual .visual-inner-bottom .bottom-btn p a:hover {
+  text-decoration: underline;
+}
 
 #part1 div.top {
   width: 1400px;
   margin: 12px auto;
   display: flex;
   overflow: hidden;
+  cursor: default;
 }
 #part1 div.top div {
   margin: 14px;
@@ -603,6 +712,9 @@ span.show {
   text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
   color: #06c;
 }
+#part1 div.top .right .more a:hover {
+  text-decoration: underline;
+}
 #part1 div.bottom {
   width: 1400px;
   height: 240px;
@@ -610,6 +722,10 @@ span.show {
   display: flex;
   align-items: center;
   padding-bottom: 60px;
+  cursor: default;
+}
+#part1 div.bottom a:hover {
+  text-decoration: underline;
 }
 #part1 div.bottom > div {
   width: calc(100% / 3);
@@ -704,6 +820,7 @@ span.show {
   letter-spacing: -2px;
   color: #1d1d1f;
   margin-top: 80px;
+  cursor: default;
 }
 #part2 div.top .left .title-main span.highlight {
   display: inline-block;
@@ -712,10 +829,14 @@ span.show {
 }
 #part2 div.top .left .title-sub {
   margin: 20px 0;
+  cursor: default;
 }
 #part2 div.top .left .button a {
   text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
   color: #06c;
+}
+#part2 div.top .left .button a:hover {
+  text-decoration: underline;
 }
 #part2 div.top .right {
   width: 675px;
@@ -735,15 +856,20 @@ span.show {
   letter-spacing: -2px;
   color: #1d1d1f;
   margin: 10px 0;
+  cursor: default;
 }
 #part2 div.top .right .title-sub {
   font-size: 22px;
   font-weight: 600;
   margin-top: 60px;
+  cursor: default;
 }
 #part2 div.top .right .more a {
   text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
   color: #06c;
+}
+#part2 div.top .right .more a:hover {
+  text-decoration: underline;
 }
 #part2 div.bottom {
   position: relative;
@@ -764,6 +890,7 @@ span.show {
   top: 50%;
   transform: translate(-28%, -60%);
   text-align: center;
+  cursor: default;
 }
 #part2 div.bottom .text-box .title-sub {
   font-family: "SF Pro";
@@ -785,7 +912,13 @@ span.show {
   text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
   color: #06c;
 }
+#part2 div.bottom .text-box .button a:hover {
+  text-decoration: underline;
+}
 
+#part3 a:hover {
+  text-decoration: underline;
+}
 #part3 div.one {
   width: 1370px;
   margin: 20px auto;
@@ -841,6 +974,7 @@ span.show {
 }
 #part3 div.one .middle ul li p a {
   color: #6e6e73;
+  text-decoration: none;
   transition: 0.3s;
 }
 #part3 div.one .middle ul li:hover img,
@@ -945,6 +1079,7 @@ span.show {
 }
 #part3 div.two .middle ul li p a {
   color: #6e6e73;
+  text-decoration: none;
   transition: 0.3s;
 }
 #part3 div.two .middle ul li:hover img,
@@ -1071,6 +1206,7 @@ span.show {
 }
 #part4 .inner-top .right .desc p {
   margin: 10px 0;
+  cursor: default;
 }
 #part4 .inner-top .right .desc a {
   font-size: 20px;
@@ -1189,64 +1325,12 @@ span.show {
 .slide img {
   width: 100%;
 }
-/* .mySwiper6{
-  position: absolute !important;
-  width: 100%;
-  height: 100%;
+#part4 .inner-middle .inner-middle-wrap .left .left-top p.title {
+  cursor: default;
 }
-.mySwiper6 .swiper-wrapper1{
-  position: absolute;
-  top: 50%;
-  height: fit-content;
-  transition-timing-function: linear;
-  z-index: 999;
+#part4 .inner-middle .inner-middle-wrap .left .left-top a:hover {
+  text-decoration: underline;
 }
-.mySwiper6 .swiper-wrapper .swiper-slide{
-  margin: 0 10px;
-}
-.mySwiper6 .swiper-wrapper .swiper-slide a{
-  width: 238px;
-  height: 135px;
-}
-.mySwiper6 .swiper-wrapper .swiper-slide a img{
-  width: 238px;
-  height: 135px;
-  border-radius: 10px;
-  margin: 0 6px;
-  cursor: pointer;
-}
-.mySwiper6 .swiper-wrapper .swiper-slide a img:hover{
-  filter: brightness(80%);
-  transition: 0.3s;
-}
-.mySwiper7{
-  position: absolute !important;
-  width: 100%;
-  height: 100%;
-}
-.mySwiper7 .swiper-wrapper2{
-  position: absolute;
-  top: 76%;
-  height: fit-content;
-  transition-timing-function: linear;
-}
-.mySwiper7 .swiper-wrapper .swiper-slide{
-  margin: 0 10px;
-}
-.mySwiper7 .swiper-wrapper .swiper-slide a{
-  width: 238px;
-  height: 135px;
-}
-.mySwiper7 .swiper-wrapper .swiper-slide a img{
-  width: 238px;
-  height: 135px;
-  border-radius: 10px;
-  margin: 0 6px;
-}
-.mySwiper7 .swiper-wrapper .swiper-slide a img:hover{
-  filter: brightness(80%);
-  transition: 0.3s;
-} */
 #part4 .inner-middle .inner-middle-wrap .left .left-bottom ul.img-ban-top {
   display: flex;
 }
@@ -1276,6 +1360,12 @@ span.show {
   height: 135px;
   border-radius: 10px;
   margin: 0 6px;
+}
+#part4 .inner-middle .inner-middle-wrap .right .right-top p.title {
+  cursor: default;
+}
+#part4 .inner-middle .inner-middle-wrap .right .right-top a:hover {
+  text-decoration: underline;
 }
 #part4 .inner-middle .inner-middle-wrap .right .right-bottom ul.arcade {
   display: grid;
@@ -1359,6 +1449,7 @@ span.show {
   font-size: 20px;
   font-weight: normal;
   text-shadow: none;
+  cursor: default;
 }
 #part4 .inner-bottom .right .desc a {
   font-size: 20px;
@@ -1377,10 +1468,12 @@ span.show {
   font-weight: 600;
   font-family: "SF Pro Display";
   margin-bottom: 20px;
+  cursor: default;
 }
 #part5 p {
   font-size: 20px;
   margin: 10px;
+  cursor: default;
 }
 #part5 .top,
 #part5 .bottom {

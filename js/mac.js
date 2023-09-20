@@ -65,48 +65,219 @@ subMenu.forEach(function (item, keys) {
 });
 
 $(function () {
+  $(".visual .visual-inner-middle .top-btn ul li .se1").click(function(e){
+    e.preventDefault();
+    $(".visual .visual-inner-middle .top-btn ul li a").css({
+      color:"#6e6e73",
+      transition:"0.3s",
+    })
+    $(this).css({
+      color:"#1d1d1f",
+      transition:"0.3s",
+    })
+  })
+  $(".visual .visual-inner-middle .top-btn ul li .se2").click(function(e){
+    e.preventDefault();
+    $(".visual .visual-inner-middle .top-btn ul li a").css({
+      color:"#6e6e73",
+      transition:"0.3s",
+    })
+    $(this).css({
+      color:"#1d1d1f",
+      transition:"0.3s",
+    })
+  })
+
+  $("#part3 div.one div.bottom div.desc").css({
+    display: "none",
+  });
+  $("#part3 div.one div.bottom div.desc1").css({
+    display: "block",
+  });
+  $("#part3 div.one div.middle ul li a").css({
+    color: "#6e6e73",
+  });
+  $("#part3 div.one div.middle ul li:first-child a").css({
+    color: "#1d1d1f",
+  });
+
+  $("#part3 div.one .bottom .back-img .back-img-inner2").hover(
+    function () {
+      $(this).css({
+        scale:"1.2",
+        transition:"0.5s",
+      })
+    },
+    function () {
+      $(this).css({
+        scale:"1",
+        transition:"0.5s",
+      })
+    }
+  );
+  $("#part3 div.two .bottom .back-img .back-img-inner2").hover(
+    function () {
+      $(this).css({
+        scale:"1.1",
+        transition:"0.5s",
+      })
+    },
+    function () {
+      $(this).css({
+        scale:"1",
+        transition:"0.5s",
+      })
+    }
+  );
+
   $("#part3 div.one div.middle ul li:first-child").click(function () {
+    $("#part3 div.one div.bottom div.desc").css({
+      display: "none",
+    });
     $("#part3 div.one .bottom .back-img .back-img-inner2").css({
       background: "url(../images/bia_safari_large.jpg)",
       transition: "0.5s",
     });
+    $("#part3 div.one div.bottom div.desc1").css({
+      display: "block",
+    });
+    $("#part3 div.one div.middle ul li a").css({
+      color: "#6e6e73",
+    });
+    $("#part3 div.one div.middle ul li:first-child a").css({
+      color: "#1d1d1f",
+    });
   });
   $("#part3 div.one div.middle ul li:nth-child(2)").click(function () {
+    $("#part3 div.one div.bottom div.desc").css({
+      display: "none",
+    });
     $("#part3 div.one .bottom .back-img .back-img-inner2").css({
       background: "url(../images/bia_photos_large.jpg)",
       transition: "0.5s",
     });
+    $("#part3 div.one div.bottom div.desc2").css({
+      display: "block",
+    });
+    $("#part3 div.one div.middle ul li a").css({
+      color: "#6e6e73",
+    });
+    $("#part3 div.one div.middle ul li:nth-child(2) a").css({
+      color: "#1d1d1f",
+    });
   });
   $("#part3 div.one div.middle ul li:nth-child(3)").click(function () {
+    $("#part3 div.one div.bottom div.desc").css({
+      display: "none",
+    });
     $("#part3 div.one .bottom .back-img .back-img-inner2").css({
       background: "url(../images/bia_imovie_large.jpg)",
       transition: "0.5s",
     });
+    $("#part3 div.one div.bottom div.desc3").css({
+      display: "block",
+    });
+    $("#part3 div.one div.middle ul li a").css({
+      color: "#6e6e73",
+    });
+    $("#part3 div.one div.middle ul li:nth-child(3) a").css({
+      color: "#1d1d1f",
+    });
   });
   $("#part3 div.one div.middle ul li:nth-child(4)").click(function () {
+    $("#part3 div.one div.bottom div.desc").css({
+      display: "none",
+    });
     $("#part3 div.one .bottom .back-img .back-img-inner2").css({
       background: "url(../images/bia_garageband_large.jpg)",
       transition: "0.5s",
     });
+    $("#part3 div.one div.bottom div.desc4").css({
+      display: "block",
+    });
+    $("#part3 div.one div.middle ul li a").css({
+      color: "#6e6e73",
+    });
+    $("#part3 div.one div.middle ul li:nth-child(4) a").css({
+      color: "#1d1d1f",
+    });
   });
   $("#part3 div.one div.middle ul li:nth-child(5)").click(function () {
+    $("#part3 div.one div.bottom div.desc").css({
+      display: "none",
+    });
     $("#part3 div.one .bottom .back-img .back-img-inner2").css({
       background: "url(../images/bia_pages_large.jpg)",
       transition: "0.5s",
     });
+    $("#part3 div.one div.bottom div.desc5").css({
+      display: "block",
+    });
+    $("#part3 div.one div.middle ul li a").css({
+      color: "#6e6e73",
+    });
+    $("#part3 div.one div.middle ul li:nth-child(5) a").css({
+      color: "#1d1d1f",
+    });
   });
   $("#part3 div.one div.middle ul li:nth-child(6)").click(function () {
+    $("#part3 div.one div.bottom div.desc").css({
+      display: "none",
+    });
     $("#part3 div.one .bottom .back-img .back-img-inner2").css({
       background: "url(../images/bia_numbers_large.jpg)",
       transition: "0.5s",
     });
+    $("#part3 div.one div.bottom div.desc6").css({
+      display: "block",
+    });
+    $("#part3 div.one div.middle ul li a").css({
+      color: "#6e6e73",
+    });
+    $("#part3 div.one div.middle ul li:nth-child(6) a").css({
+      color: "#1d1d1f",
+    });
   });
   $("#part3 div.one div.middle ul li:nth-child(7)").click(function () {
+    $("#part3 div.one div.bottom div.desc").css({
+      display: "none",
+    });
     $("#part3 div.one .bottom .back-img .back-img-inner2").css({
       background: "url(../images/bia_keynote_large.jpg)",
       transition: "0.5s",
     });
+    $("#part3 div.one div.bottom div.desc7").css({
+      display: "block",
+    });
+    $("#part3 div.one div.middle ul li a").css({
+      color: "#6e6e73",
+    });
+    $("#part3 div.one div.middle ul li:nth-child(7) a").css({
+      color: "#1d1d1f",
+    });
   });
+
+  $(".visual .visual-inner-middle .top-btn ul li").eq(0).addClass("active2");
+  /* $(".visual .visual-inner-middle .top-btn ul li").eq(0).click(function(){
+    let i = $(this).index();
+    $(".visual .visual-inner-middle .top-btn ul li").removeClass("active2");
+    $(this).addClass("active2")
+  }) */
+
+  $(".visual .visual-inner-middle .mid-parent").hide();
+  $(".visual .visual-inner-middle .mid-parent1").show();
+  $(".visual .visual-inner-middle .top-btn ul li:first-child").click(function(){
+    $(".visual .visual-inner-middle .top-btn ul li").removeClass("active2");
+    $(".visual .visual-inner-middle .top-btn ul li:first-child").addClass("active2");
+    $(".visual .visual-inner-middle .mid-parent").hide();
+    $(".visual .visual-inner-middle .mid-parent1").show();
+  })
+  $(".visual .visual-inner-middle .top-btn ul li:last-child").click(function(){
+    $(".visual .visual-inner-middle .top-btn ul li").removeClass("active2");
+    $(".visual .visual-inner-middle .top-btn ul li:last-child").addClass("active2");
+    $(".visual .visual-inner-middle .mid-parent").hide();
+    $(".visual .visual-inner-middle .mid-parent2").show();
+  })
 
   $("#part3 .one .middle ul li").eq(0).find("a").addClass("active");
   $("#part3 .one .middle ul li").click(function () {
@@ -134,6 +305,12 @@ $(function () {
   $("#part3 div.two div.bottom div.desc1").css({
     display: "block",
   });
+  $("#part3 div.two div.middle ul li a").css({
+    color: "#6e6e73",
+  });
+  $("#part3 div.two div.middle ul li:first-child a").css({
+    color: "#1d1d1f",
+  });
 
   $("#part3 div.two div.middle ul li:first-child").click(function () {
     $("div.back-img-inner2 img").eq(0).siblings().css({
@@ -149,6 +326,12 @@ $(function () {
     });
     $("#part3 div.two div.bottom div.desc1").css({
       display: "block",
+    });
+    $("#part3 div.two div.middle ul li a").css({
+      color: "#6e6e73",
+    });
+    $("#part3 div.two div.middle ul li:first-child a").css({
+      color: "#1d1d1f",
     });
   });
 
@@ -169,6 +352,12 @@ $(function () {
     $("#part3 div.two div.bottom div.desc2").css({
       display: "block",
     });
+    $("#part3 div.two div.middle ul li a").css({
+      color: "#6e6e73",
+    });
+    $("#part3 div.two div.middle ul li:nth-child(2) a").css({
+      color: "#1d1d1f",
+    });
   });
 
   $("#part3 div.two div.middle ul li:nth-child(3)").click(function () {
@@ -185,6 +374,12 @@ $(function () {
     });
     $("#part3 div.two div.bottom div.desc3").css({
       display: "block",
+    });
+    $("#part3 div.two div.middle ul li a").css({
+      color: "#6e6e73",
+    });
+    $("#part3 div.two div.middle ul li:nth-child(3) a").css({
+      color: "#1d1d1f",
     });
   });
 
@@ -203,6 +398,12 @@ $(function () {
     $("#part3 div.two div.bottom div.desc4").css({
       display: "block",
     });
+    $("#part3 div.two div.middle ul li a").css({
+      color: "#6e6e73",
+    });
+    $("#part3 div.two div.middle ul li:nth-child(4) a").css({
+      color: "#1d1d1f",
+    });
   });
 
   $("#part3 div.two div.middle ul li:nth-child(5)").click(function () {
@@ -219,6 +420,12 @@ $(function () {
     });
     $("#part3 div.two div.bottom div.desc5").css({
       display: "block",
+    });
+    $("#part3 div.two div.middle ul li a").css({
+      color: "#6e6e73",
+    });
+    $("#part3 div.two div.middle ul li:nth-child(5) a").css({
+      color: "#1d1d1f",
     });
   });
 
